@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="site_header">
+      <!-- navigation bar -->
+      <nav class="navbar navbar-expand-md bg-transparent py-md-0 py-3 site_nav">
+        <div class="container-xxl px_md">
+          <a class="fw_800 site_logo h3 mb-0 ms-sm-4 ms-3" href="#"
+            >LeeOlivier</a
+          >
+          <button
+            class="navbar-toggler me-sm-3 me-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            0
+          >
+            <i class="fas fa-bars txt_white fs-4"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse navbar_collapse"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 site_nav_ul">
+              <li class="nav-item">
+                <a class="nav-link current_page active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      
+
+      <!-- site hero -->
+      <div class="site_hero">
+        <div class="container-xxl d-flex px-0">
+          <div class="hero_left">
+            <img
+              src="images/hero.jpg"
+              class="scroll_animate fadeLeft t_7"
+              alt="hero image"
+              data-animate="fadeActive"
+            />
+          </div>
+          <div
+            class="hero_right scroll_animate fadeRight t_7"
+            data-animate="fadeActive"
+          >
+            <div>
+              <h1 class="primary_heading fw_700 mb-sm-5 mb-4 p-2">
+                I'm <span class="txt_black">Lee Olivier</span>. <br />
+                <span class="txt_black">Web Developer </span>and
+                <span class="txt_black">Business Analyst</span>
+              </h1>
+              <p class="txt_white p-2">
+                I am dedicated to delivering top-quality solutions for your
+                business needs. With a unique combination of technical expertise
+                and business acumen, I am confident in my ability to exceed your
+                expectations and help your business succeed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Values -->
+    <section>
+      <div class="container-xxl px-0">
+        <div class="row feature_values_wrapper gx-0">
+          <div
+            class="col-md-6 p-0 scroll_animate fadeLeft t_7"
+            data-animate="fadeActive"
+          >
+            <div class="feature_item_wrapper left_values">
+              <div>
+                <h2 class="secondary_heading fw_700 txt_white mb-3">
+                  Mindset and Values
+                </h2>
+                <h3 class="txt_white">
+                  Passion.
+                  <br />
+                  Integrity.
+                  <br />
+                  Excellence.
+                  <br />
+                  <br />
+                </h3>
+                <p class="txt_white fs_18">
+                  "Doing the right thing, with a passion to serve, and a
+                  commitment to excellence."
+                </p>
+              </div>
+              <div>
+                <a href="#" class="animated_btn txt_gray">More about me</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 p-0 feature_img_values scroll_animate fadeRight t_7"
+            data-animate="fadeActive"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- experience_sec -->
+    <section class="experience_sec">
+      <div class="container-xxl px_md">
+        <div>
+          <p
+            class="txt_gray text-uppercase scroll_animate fadeUp t_5"
+            data-animate="fadeUpActive"
+            data-offset="150"
+          >
+            WORK EXPERIENCE
+          </p>
+          <h2
+            class="secondary_heading fw_700 txt_white scroll_animate fadeUp t_7"
+            data-animate="fadeUpActive"
+            data-offset="150"
+          >
+            Roles and Positions I have held <br />
+          </h2>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+            <div
+              class="pe-4 scroll_animate t_7 scale"
+              data-animate="scaleActive"
+              data-offset="0"
+            >
+              <div class="g_lheading"><i class="fas fa-chart-pie"></i></div>
+              <h3 class="g_aheading h4">Business Analyst</h3>
+              <p class="g_description">
+                I have experience in analyzing customer interactions and
+                identifying areas for process improvement. I have a strong
+                understanding of Verint software and data analysis tools, and
+                have a proven track record of success in cross-functional
+                collaboration and project management.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+            <div
+              class="pe-4 scroll_animate t_7 scale"
+              data-animate="scaleActive"
+              data-offset="0"
+            >
+              <div class="g_lheading"><i class="fas fa-chart-bar"></i></div>
+              <h3 class="g_aheading h4">Reports Analyst</h3>
+              <p class="g_description">
+                I have expertise in creating and analyzing data-driven reports
+                to identify trends and inform decision-making. I am skilled in
+                using tools such as Tableau and Excel, and have a strong
+                attention to detail and ability to communicate findings
+                effectively.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+            <div
+              class="pe-4 scroll_animate t_7 scale"
+              data-animate="scaleActive"
+              data-offset="0"
+            >
+              <div class="g_lheading"><i class="fas fa-lightbulb"></i></div>
+              <h3 class="g_aheading h4">BPO Subject Matter Expert</h3>
+              <p class="g_description">
+                I have in-depth knowledge of industry best practices and
+                experience in consulting with clients to improve processes and
+                achieve business objectives. I have excellent communication and
+                problem-solving skills, and a track record of success in project
+                management.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skillset_sec -->
+    <section class="skillset_sec">
+      <div class="container-xxl px_md gx-0">
+        <div class="row">
+          <div class="col-lg-4 col-md-10 pe_55 mb-5">
+            <div>
+              <h2
+                class="secondary_heading fw_700 txt_white mb-4 scroll_animate fadeUp t_5"
+                data-animate="fadeUpActive"
+              >
+                Skillset
+              </h2>
+              <p
+                class="txt_gray scroll_animate fadeUp t_7"
+                data-animate="fadeUpActive"
+              >
+                With a diverse set of skills, I am ready to take on any
+                challenge. Let's work together to deliver top-quality solutions
+                for your needs.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-12">
+            <div>
+              <div class="row">
+                <div
+                  class="col-md-6 mb-5 scroll_animate scale t_7"
+                  data-animate="scaleActive"
+                >
+                  <div class="skillset_rgrid">
+                    <div class="mb-3 skillicon">
+                      <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="h4 fw_700 txt_white mb-3">Data Analysis</h3>
+                    <p class="txt_gray">
+                      I have strong data analysis skills, with the ability to
+                      extract, clean, and manipulate data from various sources.
+                      I am proficient in using tools such as Excel and PowerBI
+                      to analyze data and identify trends and patterns. I am
+                      also skilled in using data visualization tools to
+                      communicate my findings clearly and effectively.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 mb-5 scroll_animate scale t_7"
+                  data-animate="scaleActive"
+                >
+                  <div class="skillset_rgrid">
+                    <div class="mb-3 skillicon">
+                      <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="h4 fw_700 txt_white mb-3">Web Development</h3>
+                    <p class="txt_gray">
+                      I have extensive experience in web development, with a
+                      strong foundation in HTML, CSS, and JavaScript. I am
+                      skilled in using various frameworks and libraries, and I
+                      have a solid understanding of web security and
+                      accessibility best practices.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 mb-5 scroll_animate scale t_7"
+                  data-animate="scaleActive"
+                >
+                  <div class="skillset_rgrid">
+                    <div class="mb-3 skillicon">
+                      <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="h4 fw_700 txt_white mb-3">
+                      Database Management
+                    </h3>
+                    <p class="txt_gray">
+                      I have a strong background in database management, with
+                      experience in designing and maintaining relational
+                      databases. I am skilled in optimizing database performance
+                      and developing custom database solutions to meet the needs
+                      of my clients.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 mb-5 scroll_animate scale t_7"
+                  data-animate="scaleActive"
+                >
+                  <div class="skillset_rgrid">
+                    <div class="mb-3 skillicon">
+                      <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3 class="h4 fw_700 txt_white mb-3">Business Analysis</h3>
+                    <p class="txt_gray">
+                      I have a strong foundation in business analysis, with the
+                      ability to identify business needs and develop effective
+                      solutions to address them. I am also experienced in
+                      project management, with the ability to lead
+                      cross-functional teams and deliver projects on time and on
+                      budget.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- my projects -->
+    <section id="my_projects" class="pb-5 mb-5">
+      <div class="container-xxl px_md">
+        <div class="projects_row">
+          <div class="projects_row_left">
+            <p
+              class="txt_gray fw_700 scroll_animate fadeUp t_5"
+              data-animate="fadeUpActive"
+            >
+              WORK PORTFOLIO
+            </p>
+            <h2 class="secondary_heading txt_white fw_700">
+              Projects I have worked on
+            </h2>
+            <!-- project-boxes -->
+            <div class="project_boxes mt-md-5 mt-4 pt-4">
+              <a
+                href="#"
+                class="project_box scroll_animate fadeUp t_7"
+                data-animate="fadeUpActive"
+              >
+                <img src="images/project-1.jpg" alt="project image" />
+                <div class="project_box_inner">
+                  <h3 class="h4 fw_700 mb-3 p-2">Hotel Website</h3>
+                  <p class="txt_gray fs_18 mb-0">
+                    Provides information about hotel amenities and rooms, allows
+                    guests to book stays online, and includes special offers and
+                    policies.
+                  </p>
+                  <div class="project_icon">
+                    <i class="fas fa-arrow-up"></i>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="project_box scroll_animate fadeUp t_7"
+                data-animate="fadeUpActive"
+              >
+                <img src="images/project-2.jpg" alt="project image" />
+                <div class="project_box_inner">
+                  <h3 class="h4 fw_700 mb-3 p-2">Business Solutions Website</h3>
+                  <p class="txt_gray fs_18 mb-0">
+                    Provides a range of services and products to help businesses
+                    improve operations and efficiency. Allows online browsing
+                    and purchasing, and includes information about the benefits
+                    of each solution.
+                  </p>
+                  <div class="project_icon">
+                    <i class="fas fa-arrow-up"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="projects_row_right">
+            <!-- project-boxes -->
+            <div class="project_boxes">
+              <a
+                href="#"
+                class="project_box scroll_animate fadeUp t_7"
+                data-animate="fadeUpActive"
+              >
+                <img src="images/project-3.jpg" alt="project image" />
+                <div class="project_box_inner">
+                  <h3 class="h4 fw_700 mb-3 p-2">News Website</h3>
+                  <p class="txt_gray fs_18 mb-0">
+                    Provides current and timely information on a variety of
+                    topics, including multimedia content. Offers search function
+                    and newsletter sign-up.
+                  </p>
+                  <div class="project_icon">
+                    <i class="fas fa-arrow-up"></i>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="project_box scroll_animate fadeUp t_7"
+                data-animate="fadeUpActive"
+              >
+                <img src="images/project-4.jpg" alt="project image" />
+                <div class="project_box_inner">
+                  <h3 class="h4 fw_700 mb-3 p-2">Dental Clinic Website</h3>
+                  <p class="txt_gray fs_18 mb-0">
+                    Provides information about dental practice, services,
+                    dentists, and staff. Allows patients to schedule
+                    appointments and offers resources for oral healthcare.
+                  </p>
+                  <div class="project_icon">
+                    <i class="fas fa-arrow-up"></i>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              class="pt-5 scroll_animate fadeUp t_7"
+              data-animate="fadeUpActive"
+            >
+              <a href="#" class="more_project fs_18 mx-auto"
+                >VIEW ALL PROJECTS</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Socials -->
+    <section>
+      <div class="container-xxl px-0">
+        <div class="row feature_values_wrapper gx-0">
+          <div
+            class="col-md-6 p-0 left scroll_animate fadeLeft t_7"
+            data-animate="fadeActive"
+          >
+            <div class="feature_item_wrapper left_socials">
+              <div>
+                <h2 class="secondary_heading fw_700 txt_black mb-3">Socials</h2>
+                <p class="txt_dgray">
+                  Stay connected with me on social media! Click on the links
+                  below to visit my profiles and get updates on my latest
+                  projects, as well as industry insights and resources.
+                </p>
+                <ul class="d-flex list-unstyled mt-4">
+                  <li class="me-3">
+                    <a href="#" class="animated_btn">
+                      <i class="fab fa-facebook fa-3x"></i
+                    ></a>
+                  </li>
+                  <li class="me-3">
+                    <a href="#" class="animated_btn">
+                      <i class="fab fa-instagram fa-3x"></i
+                    ></a>
+                  </li>
+                  <li class="me-3">
+                    <a href="#" class="animated_btn">
+                      <i class="fab fa-linkedin fa-3x"></i
+                    ></a>
+                  </li>
+                  <li class="me-3">
+                    <a href="#" class="animated_btn">
+                      <i class="fab fa-discord fa-3x"></i
+                    ></a>
+                  </li>
+                  <li class="me-3">
+                    <a href="#" class="animated_btn">
+                      <i class="fab fa-twitter fa-3x"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 p-0 feature_img_social scroll_animate fadeRight t_7"
+            data-animate="fadeActive"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonials -->
+    <sections id="testimonials">
+      <div class="container-xxl px_md">
+        <div class="testimonials_row pt-5 mt-4">
+          <!--  -->
+          <div class="testimonial_sticky pb-5">
+            <h2
+              class="secondary_heading txt_white fw_700 scroll_animate fadeUp t_5"
+              data-animate="fadeUpActive"
+            >
+              Here's what people say about me
+            </h2>
+            <p
+              class="txt_gray fs_18 mb-5 scroll_animate fadeUp t_7"
+              data-animate="fadeUpActive"
+            >
+              A few lines from people who I have worked with.
+            </p>
+            <a href="#" class="animated_btn txt_white_i"
+              >See all testimonials</a
+            >
+          </div>
+          <!--  -->
+          <div class="testimonial_boxes">
+            <!--  -->
+            <div
+              class="testimonial_box scroll_animate scale t_7"
+              data-animate="scaleActive"
+            >
+              <!-- <img src="images/testimonial-1.jpg" alt="testimonial image" /> -->
+              <div class="testimonial_box_inner">
+                <h3 class="h4 fw_700 mb-5 txt_white">
+                  ‘’Lee is a web development wizard! He exceeded my expectations
+                  and delivered a visually stunning website. Highly recommend!’’
+                </h3>
+                <p class="txt_gray fs_18 mb-0 fw_700">Fey Knews</p>
+                <p class="txt_white fs_18 mb-0">CEO, Company 1</p>
+              </div>
+            </div>
+            <!--  -->
+            <div
+              class="testimonial_box scroll_animate scale t_7"
+              data-animate="scaleActive"
+            >
+              <!-- <img src="images/testimonial-2.jpeg" alt="testimonial image" /> -->
+              <div class="testimonial_box_inner">
+                <h3 class="h4 fw_700 mb-5 txt_white">
+                  ‘’Lee is a web development wizard! His attention to detail and
+                  dedication to excellence are unmatched. Hire him, you won't be
+                  disappointed!’’
+                </h3>
+                <p class="txt_gray fs_18 mb-0 fw_700">Jo Kelang</p>
+                <p class="txt_white fs_18 mb-0">CEO, Company 2</p>
+              </div>
+            </div>
+            <!--  -->
+            <div
+              class="testimonial_box scroll_animate scale t_7"
+              data-animate="scaleActive"
+            >
+              <!-- <img src="images/testimonial-3.jpg" alt="testimonial image" /> -->
+              <div class="testimonial_box_inner">
+                <h3 class="h4 fw_700 mb-5 txt_white">
+                  ‘’I hired Lee on a whim and it was the best decision I've
+                  made. He consistently exceeded my expectations and I'm so
+                  grateful to have found such a talented and passionate
+                  developer.’’
+                </h3>
+                <p class="txt_gray fs_18 mb-0 fw_700">Kun Ware</p>
+                <p class="txt_white fs_18 mb-0">CEO, Company 3</p>
+              </div>
+            </div>
+            <!--  -->
+            <div
+              class="testimonial_box scroll_animate scale t_7"
+              data-animate="scaleActive"
+            >
+              <!-- <img src="images/testimonial-3.jpg" alt="testimonial image" /> -->
+              <div class="testimonial_box_inner">
+                <h3 class="h4 fw_700 mb-5 txt_white">
+                  ‘’Pika, pika! Pika-CHUUUUUU!!!’’
+                </h3>
+                <p class="txt_gray fs_18 mb-0 fw_700">Pikachu</p>
+                <p class="txt_white fs_18 mb-0">Pokemon</p>
+              </div>
+            </div>
+            <!--  -->
+            <div
+              class="testimonial_box scroll_animate scale t_7"
+              data-animate="scaleActive"
+            >
+              <!-- <img src="images/testimonial-3.jpg" alt="testimonial image" /> -->
+              <div class="testimonial_box_inner">
+                <h3 class="h4 fw_700 mb-5 txt_white">‘’I am GROOT!’’</h3>
+                <p class="txt_gray fs_18 mb-0 fw_700">Groot</p>
+                <p class="txt_white fs_18 mb-0">
+                  Member, Guardians of the Galaxy
+                </p>
+              </div>
+            </div>
+            <!--  -->
+            <div
+              class="testimonial_box scroll_animate scale t_7"
+              data-animate="scaleActive"
+            >
+              <!-- <img src="images/testimonial-3.jpg" alt="testimonial image" /> -->
+              <div class="testimonial_box_inner">
+                <h3 class="h4 fw_700 mb-5 txt_white">
+                  ‘’Fei shang, gao shing, chi, shishyang, Chonghu, Guaja, Jushi,
+                  Xijingpin, Chunguju, Frelupin, Tashir, Wangshilian, Ho,
+                  Twenty, Chonghu, Gongmin, Chiri, Trali, Chingju, Chonghua,
+                  Renmin, Gonghu, Shangri, Chi Shirsan, Jonyen, Ju Twenty,
+                  Jonghu, Ren, Goching Kwai La’’
+                </h3>
+                <p class="txt_gray fs_18 mb-0 fw_700">Sara D.</p>
+                <p class="txt_white fs_18 mb-0">Vice Something, Somewhere</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </sections>
+
+    <!-- skillset_sec -->
+    <section class="skillset_sec">
+      <div class="container-xxl px_md gx-0">
+        <div class="row px-md-5 px-sm-4">
+          <div class="col-md-6 pe_55 mb-4">
+            <div>
+              <h2
+                class="secondary_heading fw_700 txt_white mb-4 scroll_animate fadeUp t_5"
+                data-animate="fadeUpActive"
+              >
+                Let’s work together!
+              </h2>
+              <p
+                class="txt_gray scroll_animate fadeUp t_7"
+                data-animate="fadeUpActive"
+              >
+                Now that you're familiar with my background and skills, I'd love
+                to hear if you're interested in collaborating with me on a
+                project. Let me know if you'd like to work together.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-6 scroll_animate fadeUp t_7"
+            data-animate="fadeUpActive"
+          >
+            <form class="sendmessage-form">
+              <label for="name">Name</label>
+              <input type="text" id="name" class="smessage_input" />
+              <label for="email">Email Address</label>
+              <input type="email" id="email" class="smessage_input" />
+              <label for="email">Message</label>
+              <textarea name="" id="message" rows="3"></textarea>
+              <button type="submit" class="submit_btn">LET'S GO!</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer
+      class="site_footer scroll_animate fadeUp t_7"
+      data-animate="fadeUpActive"
+    >
+      <div class="container-xxl px_md">
+        <div class="f_row_1">
+          <div class="footer_weight_1">
+            <a href="#" class="h3 footer_logo fw_800">LeeOlivier</a>
+            <ul class="d-flex list-unstyled mt-4">
+              <li class="me-3">
+                <a href="#" class="txt_white">
+                  <i class="fab fa-facebook"></i
+                ></a>
+              </li>
+              <li class="me-3">
+                <a href="#" class="txt_white">
+                  <i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li class="me-3">
+                <a href="#" class="txt_white">
+                  <i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li class="me-3">
+                <a href="#" class="txt_white">
+                  <i class="fab fa-discord"></i
+                ></a>
+              </li>
+              <li class="me-3">
+                <a href="#" class="txt_white">
+                  <i class="fab fa-twitter"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_weight_2">
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-capitalize">Home</a></li>
+              <li><a href="#" class="text-capitalize">About</a></li>
+              <li><a href="#" class="text-capitalize">Work</a></li>
+              <li><a href="#" class="text-capitalize">Contact</a></li>
+            </ul>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-capitalize">Vlogs</a></li>
+              <li><a href="#" class="text-capitalize">Extra Service <i class="fas fa-laugh-wink"></i></a></li>
+              <li><a href="#" class="text-capitalize">Donate</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="f_row_2 pt-3">
+          <p class="txt_gray mb-0">Copyright 2022 • Lee Olivier</p>
+        </div>
+      </div>    
+      
+    </footer>
+
+    <!-- ^_^ -->
+    <!-- can add loop controls -->
+    <!-- <audio id="music" src="myAudioFile.mp3" autoplay></audio>
+      <script>
+        var music = document.getElementById("music");
+        window.addEventListener("scroll", function () {
+          music.play();
+        });
+      </script> -->
+    <!-- ^_^ -->
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- app-js -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

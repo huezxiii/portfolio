@@ -28,7 +28,7 @@
   </head>
   <body>
     <!-- header -->
-    <header class="site_header">
+    <header class="site_header sticky-top">
       <!-- navigation bar -->
       <nav class="navbar navbar-expand-md bg-transparent py-md-0 py-3 site_nav">
         <div class="container-xxl px_md">
@@ -69,38 +69,39 @@
         </div>
       </nav>
 
-      <!-- site hero -->
-      <div class="site_hero">
-        <div class="container-xxl d-flex px-0">
-          <div class="hero_left">
-            <img
-              src="images/hero.jpg"
-              class="scroll_animate fadeLeft t_7"
-              alt="hero image"
-              data-animate="fadeActive"
-            />
-          </div>
-          <div
-            class="hero_right scroll_animate fadeRight t_7"
+      
+    </header>
+    <!-- site hero -->
+    <div class="site_hero">
+      <div class="container-xxl d-flex px-0">
+        <div class="hero_left">
+          <img
+            src="images/hero.jpg"
+            class="scroll_animate fadeLeft t_7"
+            alt="hero image"
             data-animate="fadeActive"
-          >
-            <div>
-              <h1 class="primary_heading fw_700 mb-sm-5 mb-4 p-2">
-                I'm <span class="txt_black">Lee Olivier</span>. <br />
-                <span class="txt_black">Web Developer </span>and
-                <span class="txt_black">Business Analyst</span>
-              </h1>
-              <p class="txt_white p-2">
-                I am dedicated to delivering top-quality solutions for your
-                business needs. With a unique combination of technical expertise
-                and business acumen, I am confident in my ability to exceed your
-                expectations and help your business succeed.
-              </p>
-            </div>
+          />
+        </div>
+        <div
+          class="hero_right scroll_animate fadeRight t_7"
+          data-animate="fadeActive"
+        >
+          <div>
+            <h1 class="primary_heading fw_700 mb-sm-5 mb-4 p-2">
+              I'm <span class="txt_black">Lee Olivier</span>. <br />
+              <span class="txt_black">Web Developer </span>and
+              <span class="txt_black">Business Analyst</span>
+            </h1>
+            <p class="txt_white p-2">
+              I am dedicated to delivering top-quality solutions for your
+              business needs. With a unique combination of technical expertise
+              and business acumen, I am confident in my ability to exceed your
+              expectations and help your business succeed.
+            </p>
           </div>
         </div>
       </div>
-    </header>
+    </div>
 
     <!-- Values -->
     <section>
@@ -713,13 +714,13 @@
 
     <!-- ^_^ -->
     <!-- can add loop controls -->
-    <audio id="music" src="myAudioFile.mp3" autoplay></audio>
+    <!-- <audio id="music" src="myAudioFile.mp3" autoplay></audio>
     <script>
       var music = document.getElementById("music");
       window.addEventListener("scroll", function () {
         music.play();
       });
-    </script>
+    </script> -->
     <!-- ^_^ -->
 
     <!-- Bootstrap JS -->

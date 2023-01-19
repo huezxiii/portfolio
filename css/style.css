@@ -156,6 +156,70 @@ bg-gray {
 }
 
 
+.ribbon-container {
+  overflow: hidden;
+  width: 100%;
+}
+.ribbon {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll-ribbon 20s linear infinite;
+}
+
+.icon-container {
+  margin-right: 16px;
+}
+@keyframes scroll-ribbon {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.icon-container i {
+  font-size: 8em;
+  margin-left: 0.5em;
+  color: var(--white);
+}
+
+.icon-container img {
+  max-width: 8em;
+  margin-left: 2em;
+  color: var(--white);
+}
+
+/* add media queries */
+@media screen and (max-width: 768px) {
+  .icon-container i {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ribbon-container {
+    width: 80%;
+  }
+  .icon-container i {
+    font-size: 2em;
+  }
+}
+
+
+#back-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: var(--gray);
+  color: white;
+  font-size: 18px;
+  padding: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .img-wrapper {
   float: right; /* or left */
   width: 30%; /* or any other width */

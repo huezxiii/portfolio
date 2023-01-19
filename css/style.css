@@ -24,6 +24,34 @@ body {
 }
 
 /* utility classes */
+
+bg-hl1 {
+  background: var(--highlight1) !important;
+}
+
+bg-hl2 {
+  background: var(--highlight2) !important;
+}
+
+bg-hl3 {
+  background: var(--highlight3) !important;
+}
+
+bg-hl4 {
+  background: var(--highlight4) !important;
+}
+
+bg-mid {
+  background: var(--mid) !important;
+}
+
+
+bg-gray {
+  background: var(--gray) !important;
+}
+
+
+
 .txt_white {
   color: var(--white);
 }
@@ -100,6 +128,39 @@ body {
     var(--highlight1)
   );
   color: var(--white);
+}
+
+
+.synonyms-section {
+  background-color: #333333;
+  color: white;
+  transition: background-color 1s ease;
+  display: flex; /* add this line */
+  align-items: center; /* add this line */
+  justify-content: center; /* add this line */
+  padding-top: 10;
+}
+
+.synonyms-section p.synonym {
+  font-size: 5em;
+}
+
+@media (min-width: 768px) {
+  .synonyms-section p.synonym {
+    font-size: 10em;
+  }
+}
+
+.synonyms-section:hover {
+  background-color: #555555;
+}
+
+
+.img-wrapper {
+  float: right; /* or left */
+  width: 30%; /* or any other width */
+  height: auto; /* or any other height */
+  min-width: 340px;
 }
 
 /* header */
@@ -777,64 +838,135 @@ textarea:hover {
 /*--------------------------------------------------------------
 # Posts
 --------------------------------------------------------------*/
-.category-section {
+
+.blog-bg {
+  background: var(--gray);
+}
+
+/* Set the width and height of the carousel items */
+.carousel-item {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Center the caption within the carousel item */
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+}
+
+/* Style the caption text */
+.carousel-caption h5 {
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px #000;
+}
+
+.carousel-caption p {
+  font-size: 18px;
+  text-shadow: 2px 2px #000;
+}
+
+.blog_article_wrapper {
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+.blog_item_wrapper-hl1 {
   background: var(--highlight1);
+  padding: 30px 30px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.post-entry-1 {
-  margin-bottom: 30px;
+.blog_item_wrapper-hl2 {
+  background: var(--highlight2);
+  padding: 30px 30px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.post-entry-1 img {
-  margin-bottom: 30px;
+.blog_item_wrapper-hl3 {
+  background: var(--highlight3);
+  padding: 30px 30px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.post-entry-1 h2 {
-  margin-bottom: 20px;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  font-weight: 500;
+.blog_item_wrapper-hl4 {
+  background: var(--highlight4);
+  padding: 30px 30px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.post-entry-1 h2 a {
-  color: var(--color-black);
+.blog_item_wrapper-mid {
+  background: var(--mid);
+  padding: 30px 30px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.post-entry-1.lg h2 {
-  font-size: 40px;
-  line-height: 1;
+.blog_item_wrapper-gray {
+  background: var(--gray);
+  padding: 30px 30px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.post-meta {
-  font-size: 11px;
-  letter-spacing: 0.07rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-family: var(--font-secondary);
-  color: rgba(var(--color-black-rgb), 0.4);
-  margin-bottom: 10px;
+.blog_img_1 {
+  background-image: url("../images/blog-kodego.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  min-height: 300px;
 }
 
-@media (max-width: 768px) {
-  .custom-border {
-    border: none !important;
-  }
+.blog_img_2 {
+  background-image: url("../images/blog-banner-2.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  min-height: 300px;
 }
 
-.author .photo {
-  margin-right: 10px;
+.blog_img_3 {
+  background-image: url("../images/blog-banner-3.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  min-height: 300px;
 }
 
-.author .photo img {
-  width: 40px;
-  border-radius: 50%;
-  margin-bottom: 0;
+.article {
+  background-image: url("../images/blog-kodego.jpg");
 }
 
-.author .name h3 {
-  margin: 0;
-  padding: 0;
-  font-size: 15px;
-  font-family: var(--font-secondary);
+.article-1 {
+  background-image: url("../images/blog-kodego.jpg");
+}
+.article-2 {
+  background-image: url("../images/blog-kodego.jpg");
+}
+.article-3 {
+  background-image: url("../images/blog-kodego.jpg");
 }

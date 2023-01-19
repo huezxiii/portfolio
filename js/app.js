@@ -1,29 +1,22 @@
-let scrollTop = (element) => {
-    let elementClass = element.dataset.animate;
-    
-        let triggerBottom = window.innerHeight / 5 * 4;
-        console.log(element.getBoundingClientRect())
-        if(element.getBoundingClientRect().top < triggerBottom){
-            element.classList.add(elementClass, "active");
-        }else{
-            element.classList.remove(elementClass, "active");
-        }
-}
+var synonyms = [
+  "posts",
+  "articles",
+  "entries",
+  "content",
+  "writing",
+  "journals",
+  "thoughts",
+  "blogs",
+  "stories",
+];
+var colors = ["#333333", "#555555", "#777777", "#999999", "#bbbbbb"];
+var i = 0;
 
-let scroll_animate = document.querySelectorAll(".scroll_animate");
-
-if(scroll_animate.length > 0){
-    let animateCount = scroll_animate.length;
-    for(let i = 0;i < animateCount;i++){
-        scrollTop(scroll_animate[i])
-    }
-}
-
-window.addEventListener("scroll", () => {
-    if(scroll_animate.length > 0){
-        let animateCount = scroll_animate.length;
-        for(let i = 0;i < animateCount;i++){
-            scrollTop(scroll_animate[i])
-        }
-    }
-})
+setInterval(function () {
+  document.querySelector(".synonym").innerHTML = synonyms[i];
+  i = (i + 1) % synonyms.length;
+}, 1500);
+setInterval(function () {
+  document.querySelector(".synonyms-section").style.backgroundColor = colors[i];
+  i = (i + 1) % colors.length;
+}, 1500);

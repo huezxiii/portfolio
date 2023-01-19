@@ -227,6 +227,11 @@ bg-gray {
   min-width: 340px;
 }
 
+
+.card {
+  min-height: 400px;
+}
+
 /* header */
 .site_header {
   background-color: var(--black);

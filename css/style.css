@@ -25,6 +25,10 @@ body {
 
 /* utility classes */
 
+html {
+  scroll-behavior: smooth;
+}
+
 bg-hl1 {
   background: var(--highlight1) !important;
 }
